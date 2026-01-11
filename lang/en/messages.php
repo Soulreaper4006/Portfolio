@@ -9,7 +9,7 @@ return [
 
     // Home
     'hello' => 'Hello, I am a',
-    'freelance_dev' => 'Freelance Developer',
+    'freelance_dev' => 'Developer',
     'hero_description' => "Passionate about development and building applications. I love solving complex problems by finding simple and intuitive interfaces.",
     'view_projects' => 'View my projects',
     'my_path' => 'My Journey',
