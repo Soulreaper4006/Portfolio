@@ -8,6 +8,120 @@ class PortfolioController extends Controller
 {
     private function getProjects()
     {
+        $locale = app()->getLocale();
+
+        if ($locale === 'en') {
+            return [
+                [
+                    'slug' => 'pac-man',
+                    'title' => 'PacMan',
+                    'description' => 'A clone of the famous PacMan arcade game. A project recreating the retro experience with ghost management and scoring.',
+                    'image' => '/images/pacman.png',
+                    'link' => 'https://github.com/Soulreaper4006/PacMan',
+                    'tags' => ['Game Dev', 'Java', 'Algorithms'],
+                    'content' => "
+                        <p class='mb-4'>This project is a faithful reproduction of the classic PacMan arcade game. The main objective was to work on real-time game logic and enemy artificial intelligence.</p>
+                        <h3 class='text-xl font-bold text-white mb-2'>Key Features:</h3>
+                        <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
+                            <li>Smooth character movement</li>
+                            <li>Ghost AI (chase and scatter behaviors)</li>
+                            <li>Collision and score management</li>
+                            <li>Progressive difficulty levels</li>
+                        </ul>
+                        <p>The source code is available on GitHub for consultation.</p>
+                    "
+                ],
+                [
+                    'slug' => 'marathon',
+                    'title' => 'Marathon',
+                    'description' => 'A project developed in 24h as a team.',
+                    'image' => '/images/marathon.png',
+                    'link' => 'https://github.com/Soulreaper4006/Marathon',
+                    'tags' => ['Development', 'Open Source'],
+                    'content' => "
+                        <p class='mb-4'>Marathon is a personal project whose source code is fully available on GitHub.</p>
+                        <h3 class='text-xl font-bold text-white mb-2'>Highlights:</h3>
+                        <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
+                            <li>Structured software architecture</li>
+                            <li>Version control with Git</li>
+                            <li>Documented and modular code</li>
+                        </ul>
+                        <p>Check the repository to dive into technical details and see the project evolution.</p>
+                    "
+                ],
+                [
+                    'slug' => 'lensymphony',
+                    'title' => 'LenSymphony',
+                    'description' => 'A synthesizer capable of reading XML files to play music.',
+                    'image' => '/images/lensymphony.png',
+                    'link' => 'https://github.com/Soulreaper4006/lensymphony',
+                    'tags' => ['Audio', 'XML', 'Synthesizer', 'Java'],
+                    'content' => "
+                        <p class='mb-4'>The goal of this project was the creation of a complete sound synthesizer in Java.</p>
+                        <h3 class='text-xl font-bold text-white mb-2'>Main Features:</h3>
+                        <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
+                            <li>Development of multiple virtual instruments</li>
+                            <li>Sheet music reading system via XML files</li>
+                            <li>Real-time sound generation and synthesis</li>
+                        </ul>
+                    "
+                ],
+                [
+                    'slug' => 'cocktail-quiz',
+                    'title' => 'CocktailQuiz',
+                    'description' => 'An interactive quiz on cocktails using Flask and an external API.',
+                    'image' => '/images/cocktail.png',
+                    'link' => 'https://github.com/Soulreaper4006/CocktailQuiz',
+                    'tags' => ['Python', 'Flask', 'API', 'Web'],
+                    'content' => "
+                        <p class='mb-4'>This project is a fun web application developed with Python allowing users to test their cocktail knowledge.</p>
+                        <h3 class='text-xl font-bold text-white mb-2'>Technical Points:</h3>
+                        <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
+                            <li><b>Flask Backend:</b> Use of Python micro-framework to manage server logic.</li>
+                            <li><b>API Integration:</b> Connection to an online API to dynamically retrieve cocktail data.</li>
+                            <li><b>Dynamic Quiz:</b> Random cocktail retrieval and session storage.</li>
+                        </ul>
+                    "
+                ],
+                [
+                    'slug' => 'rollaball',
+                    'title' => 'Rollaball',
+                    'description' => 'A 3D arcade mini-game developed on Unity.',
+                    'image' => '/images/rollaball.png',
+                    'link' => '#',
+                    'tags' => ['Unity', 'Game Dev', 'C#'],
+                    'content' => "
+                        <p class='mb-4'>This project is a physics-based 3D game made with the Unity engine. The player embodies a ball and must navigate in an interactive environment.</p>
+                        <h3 class='text-xl font-bold text-white mb-2'>Game Mechanics:</h3>
+                        <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
+                            <li><b>Pursuit:</b> An enemy tracks the player constantly.</li>
+                            <li><b>Score:</b> Collection of yellow cubes to increase score.</li>
+                            <li><b>Physics:</b> Interaction with pink obstacles that the ball can push.</li>
+                        </ul>
+                    "
+                ],
+                [
+                    'slug' => 'roadrage',
+                    'title' => 'RoadRage',
+                    'description' => 'A multiplayer arcade racing game where chaos and speed meet.',
+                    'image' => '/images/roadrage.png',
+                    'link' => '#',
+                    'tags' => ['Unity', 'Game Dev', 'C#', 'Multiplayer'],
+                    'content' => "
+                        <p class='mb-4'>RoadRage is a competitive two-player game where the goal is to survive on a dangerous road.</p>
+                        <h3 class='text-xl font-bold text-white mb-2'>Game Details:</h3>
+                        <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
+                            <li><b>Vehicles:</b> Choice between controlling a sturdy truck or an agile plane.</li>
+                            <li><b>Obstacles:</b> Reflex dodging of oncoming buses.</li>
+                            <li><b>Destruction:</b> Fun physics allowing to knock over stacks of crates with style.</li>
+                            <li><b>Objective:</b> Reach the end of the track before the opponent (or survive the longest).</li>
+                        </ul>
+                    "
+                ]
+            ];
+        }
+
+        // Default to French
         return [
             [
                 'slug' => 'pac-man',
