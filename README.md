@@ -21,11 +21,6 @@ Le portfolio met en avant plusieurs projets techniques, notamment :
 -   **Rollaball** : Mini-jeu d'arcade 3D (Unity/C#).
 -   **RoadRage** : Jeu de course multijoueur (Unity/C#).
 
-## 🛠️ Stack Technique
-
--   **Framework Backend** : [Laravel](https://laravel.com)
--   **Frontend** : Blade Templates, [Tailwind CSS](https://tailwindcss.com)
--   **Langages** : PHP, HTML, CSS, JavaScript
 
 ## Installation
 
