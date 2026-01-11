@@ -49,10 +49,6 @@
                             </a>
                         @endif
 
-                        <div class="mt-4 pt-4 border-t border-gray-700">
-                             <p class="text-sm text-gray-500 text-center">Partager ce projet</p>
-                             {{-- Add social icons or similar here if needed --}}
-                        </div>
                     </div>
                 </div>
             </div>
