@@ -39,7 +39,7 @@ class PortfolioController extends Controller
                     'link' => 'https://github.com/Soulreaper4006/Marathon',
                     'tags' => ['Development', 'Open Source'],
                     'content' => "
-                        <p class='mb-4'>Marathon is a personal project whose source code is fully available on GitHub.</p>
+                        <p class='mb-4'>Marathon is a project whose goal is to create and edit articles about bollywoodian films.</p>
                         <h3 class='text-xl font-bold text-white mb-2'>Highlights:</h3>
                         <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
                             <li>Structured software architecture</li>
@@ -150,7 +150,7 @@ class PortfolioController extends Controller
                 'link' => 'https://github.com/Soulreaper4006/Marathon',
                 'tags' => ['Développement', 'Open Source'],
                 'content' => "
-                    <p class='mb-4'>Marathon est un projet personnel dont le code source est intégralement disponible sur GitHub.</p>
+                    <p class='mb-4'>Marathon est un projet dont le but est de permettre à l'utilisateur d'écrire ou modifier des articles sur des films bollywoodiens.</p>
                     <h3 class='text-xl font-bold text-white mb-2'>Points forts :</h3>
                     <ul class='list-disc list-inside space-y-2 mb-4 text-gray-300'>
                         <li>Architecture logicielle structurée</li>
@@ -259,5 +259,10 @@ class PortfolioController extends Controller
     public function cv()
     {
         return view('cv');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }

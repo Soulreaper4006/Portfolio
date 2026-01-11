@@ -7,6 +7,7 @@ Route::get('/', [PortfolioController::class, 'home'])->name('home');
 Route::get('/projects', [PortfolioController::class, 'projects'])->name('projects');
 Route::get('/projects/{slug}', [PortfolioController::class, 'show'])->name('projects.show');
 Route::get('/cv', [PortfolioController::class, 'cv'])->name('cv');
+Route::get('/contact', [PortfolioController::class, 'contact'])->name('contact');
 
 Route::get('/language/{locale}', function ($locale) {
     if (in_array($locale, ['fr', 'en'])) {

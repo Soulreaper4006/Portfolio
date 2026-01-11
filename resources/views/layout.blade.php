@@ -23,6 +23,7 @@
                 <a href="{{ route('home') }}" class="transition hover:text-purple-400 {{ request()->routeIs('home') ? 'text-purple-400 font-semibold' : 'text-gray-300' }}">{{ __('messages.home') }}</a>
                 <a href="{{ route('projects') }}" class="transition hover:text-purple-400 {{ request()->routeIs('projects') ? 'text-purple-400 font-semibold' : 'text-gray-300' }}">{{ __('messages.projects') }}</a>
                 <a href="{{ route('cv') }}" class="transition hover:text-purple-400 {{ request()->routeIs('cv') ? 'text-purple-400 font-semibold' : 'text-gray-300' }}">{{ __('messages.cv') }}</a>
+                <a href="{{ route('contact') }}" class="transition hover:text-purple-400 {{ request()->routeIs('contact') ? 'text-purple-400 font-semibold' : 'text-gray-300' }}">{{ __('messages.contact') }}</a>
 
                 {{-- Language Switcher --}}
                 <div class="ml-4 pl-4 border-l border-gray-700">

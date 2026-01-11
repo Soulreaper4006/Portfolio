@@ -30,5 +30,13 @@ return [
     'download_cv' => 'Télécharger le CV',
     'pdf_error' => 'Votre navigateur ne peut pas afficher ce fichier PDF.',
     'click_to_download' => 'Cliquez ici pour le télécharger.',
-];
 
+    // Contact
+    'contact' => 'Contact',
+    'contact_title' => 'Me Contacter',
+    'contact_description' => 'N\'hésitez pas à me contacter pour toute opportunité ou question.',
+    'email' => 'Email',
+    'linkedin' => 'LinkedIn',
+    'discord' => 'Discord',
+    'github' => 'GitHub',
+];

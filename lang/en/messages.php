@@ -30,4 +30,13 @@ return [
     'download_cv' => 'Download CV',
     'pdf_error' => 'Your browser cannot display this PDF file.',
     'click_to_download' => 'Click here to download it.',
+
+    // Contact
+    'contact' => 'Contact',
+    'contact_title' => 'Contact Me',
+    'contact_description' => 'Feel free to reach out for any opportunities or questions.',
+    'email' => 'Email',
+    'linkedin' => 'LinkedIn',
+    'discord' => 'Discord',
+    'github' => 'GitHub',
 ];
