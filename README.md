@@ -1,16 +1,27 @@
-# React + Vite
+# Portfolio — Étudiant en informatique
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio personnel construit avec React + Vite.
 
-Currently, two official plugins are available:
+## Commandes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install      # installer les dépendances
+npm run dev      # serveur de dev local
+npm run build    # build de production (dossier dist/)
+npm run preview  # prévisualiser le build
+npm run lint     # oxlint
+```
 
-## React Compiler
+## Personnaliser
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tout le contenu éditable est centralisé dans `src/data/` :
 
-## Expanding the Oxlint configuration
+- `profile.js` — nom, rôle, description, email, réseaux, skills, lien CV
+- `projects.js` — cartes de la section Projets
+- `resume.js` — expérience, formation, compétences, langues
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Le design et les composants sont dans `src/` (`components/`, `App.css`).
+
+## Déploiement
+
+Push sur GitHub puis import du repo dans Vercel / Netlify / GitHub Pages : build automatique, hébergement gratuit.
