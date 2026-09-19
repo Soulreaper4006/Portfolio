@@ -28,7 +28,7 @@ export const translations = {
       tagline: 'J’apprends, je code, je construis.',
       description:
         'Passionné par le développement web et la création d’applications utiles, je combine projets personnels, stage et autodidaxie pour progresser sur tous les fronts.',
-      availability: 'Disponible pour un stage',
+      availability: 'Recherche un stage ou une alternance',
       downloadCv: 'Télécharger mon CV',
       viewProjects: 'Voir mes projets',
       skills: ['React', 'HTML / CSS', 'PHP', 'Spring Boot'],
@@ -94,56 +94,66 @@ export const translations = {
       languagesTitle: 'Langues',
       experience: [
         {
-          title: 'Stage / projet de développement web',
-          place: 'Entreprise ou organisation · Lieu',
-          period: '20XX — 20XX',
-          description:
-            'Participation à la conception et au développement d’une application web. À compléter avec ton expérience réelle.',
+          title: 'Stage — Développement d’une application web & mobile',
+          place: 'Horney Dog Shop · Tourcoing',
+          period: 'Avr. 2026 — Juin 2026',
           bullets: [
-            'Développement d’interfaces et intégration d’API',
-            'Utilisation de Git et de la revue de code',
-            'Échanges avec l’équipe produit',
+            'Développement d’une application web et mobile de gestion de stock de produits et matières premières.',
+            'Interface réalisée avec React + Next.js, persistance des données sur une base PostgreSQL.',
+            'Suivi de la demande du client et ajustements au fil du développement.',
           ],
         },
       ],
       education: [
         {
-          title: 'Formation en informatique',
-          place: 'Établissement · Mention / Niveau',
-          period: '20XX — 20XX',
-          description:
-            'Programmation, bases de données, développement web et architectures logicielles à travers projets et travaux pratiques.',
+          title: 'BUT Informatique — 3e année',
+          place: 'IUT de Lens',
+          period: 'Sept. 2024 — Aujourd’hui',
+        },
+        {
+          title: 'Baccalauréat général',
+          place: 'Lycée Henri Darras · Liévin',
+          period: '2024',
+          bullets: ['Spécialités Mathématiques et Numérique et Sciences Informatiques (NSI).'],
         },
       ],
       skills: [
         {
-          group: 'Frontend',
-          items: ['HTML / CSS', 'JavaScript', 'React', 'Tailwind CSS'],
+          group: 'Langages',
+          items: ['Python', 'Java', 'C++', 'JavaScript'],
         },
         {
-          group: 'Backend',
-          items: ['PHP', 'Laravel', 'Python', 'SQL', 'Spring Boot (en cours)'],
+          group: 'Développement web',
+          items: ['HTML', 'CSS', 'PHP', 'React', 'Next.js'],
+        },
+        {
+          group: 'Bases de données',
+          items: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB'],
+        },
+        {
+          group: 'Jeux & interfaces',
+          items: ['Unity', 'Blender', 'JavaFX', 'SceneBuilder'],
         },
         {
           group: 'Outils',
-          items: ['Git / GitHub', 'JetBrains', 'VS Code'],
+          items: ['Git / GitHub', 'GitLab', 'Docker', 'JetBrains', 'VS Code'],
         },
       ],
       languages: [
         { name: 'Français', level: 'Natif' },
-        { name: 'Anglais', level: 'Technique' },
+        { name: 'Anglais', level: 'Courant (technique)' },
       ],
     },
     contact: {
       kicker: '// contact',
       title: 'Envie de collaborer ou de discuter ?',
-      text: 'Ouvert aux stages, projets et échanges. Mon inbox est toujours ouvert.',
+      text: 'Ouvert à un stage (mars 2027) ou une alternance (dès maintenant), projets et échanges. Mon inbox est toujours ouvert.',
       github: 'GitHub',
       linkedin: 'LinkedIn',
       discord: 'Discord',
       location: 'France',
       footer:
-        'fait avec React. Le code est sur GitHub. Toutes les valeurs sont des placeholders à personnaliser.',
+        'fait avec React · le code est sur GitHub',
     },
   },
 
@@ -160,7 +170,7 @@ export const translations = {
       tagline: 'I learn, I code, I build.',
       description:
         'Passionate about web development and building useful applications, I combine personal projects, an internship and self-learning to grow on every front.',
-      availability: 'Available for an internship',
+      availability: 'Seeking an internship or work-study',
       downloadCv: 'Download my résumé',
       viewProjects: 'View my projects',
       skills: ['React', 'HTML / CSS', 'PHP', 'Spring Boot'],
@@ -226,56 +236,66 @@ export const translations = {
       languagesTitle: 'Languages',
       experience: [
         {
-          title: 'Web development internship / project',
-          place: 'Company or organization · Location',
-          period: '20XX — 20XX',
-          description:
-            'Contributed to the design and development of a web app. Fill in your real experience here.',
+          title: 'Internship — Web & Mobile Application Development',
+          place: 'Horney Dog Shop · Tourcoing',
+          period: 'Apr 2026 — Jun 2026',
           bullets: [
-            'Built interfaces and integrated APIs',
-            'Used Git and code review workflows',
-            'Collaborated with the product team',
+            'Built a web and mobile application to manage inventory of products and raw materials.',
+            'UI developed with React + Next.js, data persisted in a PostgreSQL database.',
+            'Gathered client requirements and iterated throughout the development process.',
           ],
         },
       ],
       education: [
         {
-          title: 'Computer science studies',
-          place: 'Institution · Major / Level',
-          period: '20XX — 20XX',
-          description:
-            'Programming, databases, web development and software architecture through projects and labs.',
+          title: 'BUT Informatique — 3rd year',
+          place: 'IUT de Lens',
+          period: 'Sep 2024 — Present',
+        },
+        {
+          title: 'French General Baccalaureate',
+          place: 'Lycée Henri Darras · Liévin',
+          period: '2024',
+          bullets: ['Majors in Mathematics and Computer Science (NSI).'],
         },
       ],
       skills: [
         {
-          group: 'Frontend',
-          items: ['HTML / CSS', 'JavaScript', 'React', 'Tailwind CSS'],
+          group: 'Languages',
+          items: ['Python', 'Java', 'C++', 'JavaScript'],
         },
         {
-          group: 'Backend',
-          items: ['PHP', 'Laravel', 'Python', 'SQL', 'Spring Boot (learning)'],
+          group: 'Web development',
+          items: ['HTML', 'CSS', 'PHP', 'React', 'Next.js'],
+        },
+        {
+          group: 'Databases',
+          items: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB'],
+        },
+        {
+          group: 'Games & UI',
+          items: ['Unity', 'Blender', 'JavaFX', 'SceneBuilder'],
         },
         {
           group: 'Tools',
-          items: ['Git / GitHub', 'JetBrains', 'VS Code'],
+          items: ['Git / GitHub', 'GitLab', 'Docker', 'JetBrains', 'VS Code'],
         },
       ],
       languages: [
         { name: 'French', level: 'Native' },
-        { name: 'English', level: 'Technical' },
+        { name: 'English', level: 'Fluent (technical)' },
       ],
     },
     contact: {
       kicker: '// contact',
       title: 'Want to collaborate or chat?',
-      text: 'Open to internships, projects and conversations. My inbox is always open.',
+      text: 'Open to an internship (March 2027) or a work-study position (starting now), projects and conversations. My inbox is always open.',
       github: 'GitHub',
       linkedin: 'LinkedIn',
       discord: 'Discord',
       location: 'France',
       footer:
-        'built with React. The code lives on GitHub. All values are placeholders to customize.',
+        'built with React · the code lives on GitHub',
     },
   },
 }
