@@ -601,7 +601,9 @@
   color: var(--accent-2);
 }
 .resume__col + .resume__col,
-.resume__col .resume__col-title + .resume__col-title {
+.resume__col .resume__col-title + .resume__col-title,
+.resume__col .skills + .resume__col-title,
+.resume__col .timeline + .resume__col-title {
   margin-top: 44px;
 }
 
