@@ -1,10 +1,14 @@
 # Ugo Dassonville — Portfolio
 
-Portfolio personnel bilingue (FR / EN), entièrement statique et gratuit à héberger. Construit avec React + Vite.
+![React](https://img.shields.io/badge/React-19.2.8-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8.3.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![OxLint](https://img.shields.io/badge/OxLint-1.81.0-34445C?style=for-the-badge)
+
+Portfolio personnel bilingue (FR / EN).Construit avec React + Vite.
 
 ## Démo
 
-🔗 **Voir le portfolio en ligne** — *bientôt en ligne* (après import du repo sur Vercel / Netlify / GitHub Pages)
+🔗 **[Voir le portfolio en ligne](https://portfolio-dassonville-ugo.vercel.app)** — hébergé sur Vercel
 
 ## Fonctionnalités
 
