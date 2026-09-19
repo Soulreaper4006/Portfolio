@@ -1,5 +1,7 @@
-import { profile } from '../data/profile'
+import { site } from '../data/site'
+import { useLang } from '../i18n/useLang'
 import Reveal from './Reveal'
+import pfp from '../assets/pfp.jpg'
 
 function GitHubIcon() {
   return (
@@ -27,31 +29,33 @@ function MailIcon() {
 }
 
 const socials = [
-  { name: 'GitHub', href: profile.socials.github, icon: GitHubIcon },
-  { name: 'LinkedIn', href: profile.socials.linkedin, icon: LinkedInIcon },
-  { name: 'Email', href: `mailto:${profile.email}`, icon: MailIcon },
+  { name: 'GitHub', href: site.socials.github, icon: GitHubIcon },
+  { name: 'LinkedIn', href: site.socials.linkedin, icon: LinkedInIcon },
 ]
 
 export default function Hero() {
+  const { t } = useLang()
+  const hero = t.hero
+
   return (
     <section id="accueil" className="hero">
       <div className="hero__inner container">
         <Reveal className="hero__text">
           <p className="hero__badge">
             <span className="hero__dot" aria-hidden="true" />
-            {profile.availability.label}
+            {hero.availability}
           </p>
 
           <h1 className="hero__title">
-            <span className="hero__hello">Salut, moi c’est</span>
-            <span className="hero__gradient">{profile.name}</span>
+            <span className="hero__hello">{hero.hello}</span>
+            <span className="hero__gradient">{site.name}</span>
           </h1>
 
-          <p className="hero__role">{profile.role}</p>
-          <p className="hero__desc">{profile.description}</p>
+          <p className="hero__role">{hero.role}</p>
+          <p className="hero__desc">{hero.description}</p>
 
-          <ul className="hero__chips" aria-label="Compétences principales">
-            {profile.skills.map((skill) => (
+          <ul className="hero__chips" aria-label={hero.role}>
+            {hero.skills.map((skill) => (
               <li key={skill}>
                 <span className="hero__chip">{skill}</span>
               </li>
@@ -60,14 +64,14 @@ export default function Hero() {
 
           <div className="hero__actions">
             <a className="btn btn--primary" href="#projets">
-              Voir mes projets
+              {hero.viewProjects}
             </a>
-            <a className="btn btn--ghost" href={profile.cv} download>
-              Télécharger mon CV
+            <a className="btn btn--ghost" href={site.cv} download>
+              {hero.downloadCv}
             </a>
           </div>
 
-          <ul className="hero__socials" aria-label="Réseaux et contact">
+          <ul className="hero__socials" aria-label="Réseaux">
             {socials.map(({ name, href, icon: Icon }) => (
               <li key={name}>
                 <a href={href} target="_blank" rel="noreferrer" aria-label={name}>
@@ -76,6 +80,12 @@ export default function Hero() {
                 </a>
               </li>
             ))}
+            <li>
+              <a className="hero__socials-mail" href={`mailto:${site.email}`} aria-label="Email">
+                <MailIcon />
+                <span>Email</span>
+              </a>
+            </li>
           </ul>
         </Reveal>
 
@@ -85,28 +95,29 @@ export default function Hero() {
               <span className="terminal__dot terminal__dot--red" />
               <span className="terminal__dot terminal__dot--yellow" />
               <span className="terminal__dot terminal__dot--green" />
-              <span className="terminal__title">prenom.nom — zsh</span>
+              <span className="terminal__title">~ — zsh</span>
             </div>
             <div className="terminal__body">
               <p>
-                <span className="terminal__prompt">~/portfolio</span> whoami
+                <span className="terminal__prompt">~/portfolio</span> {hero.terminal.whoami}
               </p>
-              <p className="terminal__out">{profile.role.toLowerCase()}</p>
+              <p className="terminal__out">{hero.role.toLowerCase()}</p>
               <p>
-                <span className="terminal__prompt">~/portfolio</span> skills --list
+                <span className="terminal__prompt">~/portfolio</span> {hero.terminal.skills}
               </p>
-              <p className="terminal__out">react · php · spring · html/css</p>
+              <p className="terminal__out">{hero.terminal.skillsList}</p>
               <p>
-                <span className="terminal__prompt">~/portfolio</span> cat mission
+                <span className="terminal__prompt">~/portfolio</span> {hero.terminal.mission}
               </p>
-              <p className="terminal__out">“ {profile.tagline} ”</p>
+              <p className="terminal__out">“ {hero.tagline} ”</p>
               <p>
-                <span className="terminal__prompt">~/portfolio</span> npm run build
+                <span className="terminal__prompt">~/portfolio</span> {hero.terminal.build}
                 <span className="terminal__cursor" />
               </p>
-              <p className="terminal__ok">✓ 3 projets en ligne — déploiement automatique</p>
+              <p className="terminal__ok">{hero.terminal.ok}</p>
             </div>
           </div>
+          <img className="hero__pfp" src={pfp} alt={site.name} width="96" height="96" />
         </Reveal>
       </div>
     </section>

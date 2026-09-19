@@ -1,14 +1,9 @@
 import { useEffect, useState } from 'react'
-import { profile } from '../data/profile'
-
-const links = [
-  { label: 'Accueil', href: '#accueil' },
-  { label: 'Projets', href: '#projets' },
-  { label: 'CV', href: '#cv' },
-  { label: 'Contact', href: '#contact' },
-]
+import { useLang } from '../i18n/useLang'
+import { site } from '../data/site'
 
 export default function Navbar() {
+  const { lang, setLang, t } = useLang()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -19,6 +14,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const links = [
+    { label: t.nav.home, href: '#accueil' },
+    { label: t.nav.projects, href: '#projets' },
+    { label: t.nav.cv, href: '#cv' },
+    { label: t.nav.contact, href: '#contact' },
+  ]
+
   return (
     <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="nav__inner">
@@ -26,7 +28,7 @@ export default function Navbar() {
           <span className="nav__logo" aria-hidden="true">
             {'</>'}
           </span>
-          <span>{profile.firstName}</span>
+          <span>{site.firstName}</span>
         </a>
 
         <nav className={`nav__links ${open ? 'nav__links--open' : ''}`} aria-label="Navigation principale">
@@ -36,6 +38,25 @@ export default function Navbar() {
             </a>
           ))}
         </nav>
+
+        <div className={`nav__lang ${open ? 'nav__lang--open' : ''}`} role="group" aria-label="Langue">
+          <button
+            type="button"
+            className={lang === 'fr' ? 'is-active' : ''}
+            onClick={() => setLang('fr')}
+            aria-pressed={lang === 'fr'}
+          >
+            FR
+          </button>
+          <button
+            type="button"
+            className={lang === 'en' ? 'is-active' : ''}
+            onClick={() => setLang('en')}
+            aria-pressed={lang === 'en'}
+          >
+            EN
+          </button>
+        </div>
 
         <button
           type="button"

@@ -1,12 +1,12 @@
-import { resume } from '../data/resume'
-import { profile } from '../data/profile'
+import { site } from '../data/site'
+import { useLang } from '../i18n/useLang'
 import Reveal from './Reveal'
 
-function Timeline({ items, kind }) {
+function Timeline({ items }) {
   return (
     <div className="timeline">
       {items.map((item, index) => (
-        <article key={`${kind}-${item.title}`} className="timeline__item">
+        <article key={`${item.title}-${index}`} className="timeline__item">
           <div className="timeline__marker" aria-hidden="true" />
           <p className="timeline__period">{item.period}</p>
           <h3 className="timeline__title">{item.title}</h3>
@@ -27,15 +27,18 @@ function Timeline({ items, kind }) {
 }
 
 export default function Resume() {
+  const { t } = useLang()
+  const r = t.resume
+
   return (
     <section id="cv" className="section section--alt">
       <div className="container">
         <Reveal className="section__head">
-          <p className="kicker">// cv</p>
+          <p className="kicker">{r.kicker}</p>
           <div className="section__head-row">
-            <h2>Parcours &amp; compétences</h2>
-            <a className="btn btn--primary btn--sm" href={profile.cv} download>
-              Télécharger le CV (PDF)
+            <h2>{r.title}</h2>
+            <a className="btn btn--primary btn--sm" href={site.cv} download>
+              {r.downloadCv}
             </a>
           </div>
         </Reveal>
@@ -43,22 +46,22 @@ export default function Resume() {
         <div className="resume__grid">
           <Reveal className="resume__col">
             <h3 className="resume__col-title">
-              <span aria-hidden="true">▹</span> Expérience
+              <span aria-hidden="true">▹</span> {r.experienceTitle}
             </h3>
-            <Timeline items={resume.experience} kind="exp" />
+            <Timeline items={r.experience} />
 
             <h3 className="resume__col-title">
-              <span aria-hidden="true">▹</span> Formation
+              <span aria-hidden="true">▹</span> {r.educationTitle}
             </h3>
-            <Timeline items={resume.education} kind="edu" />
+            <Timeline items={r.education} />
           </Reveal>
 
           <Reveal delay={100} className="resume__col">
             <h3 className="resume__col-title">
-              <span aria-hidden="true">▹</span> Compétences
+              <span aria-hidden="true">▹</span> {r.skillsTitle}
             </h3>
             <div className="skills">
-              {resume.skills.map((group) => (
+              {r.skills.map((group) => (
                 <div key={group.group} className="skills__group">
                   <p className="skills__group-label">{group.group}</p>
                   <ul className="skills__chips">
@@ -71,10 +74,10 @@ export default function Resume() {
             </div>
 
             <h3 className="resume__col-title">
-              <span aria-hidden="true">▹</span> Langues
+              <span aria-hidden="true">▹</span> {r.languagesTitle}
             </h3>
             <ul className="langs">
-              {resume.languages.map((lang) => (
+              {r.languages.map((lang) => (
                 <li key={lang.name}>
                   <span>{lang.name}</span>
                   <span className="langs__level">{lang.level}</span>

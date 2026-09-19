@@ -1,6 +1,6 @@
-# Portfolio — Étudiant en informatique
+# Portfolio — Ugo Dassonville
 
-Portfolio personnel construit avec React + Vite.
+Portfolio personnel (maquette FR/EN) construit avec React + Vite, hébergement prévu sur Vercel / Netlify / GitHub Pages (gratuit).
 
 ## Commandes
 
@@ -14,13 +14,11 @@ npm run lint     # oxlint
 
 ## Personnaliser
 
-Tout le contenu éditable est centralisé dans `src/data/` :
-
-- `profile.js` — nom, rôle, description, email, réseaux, skills, lien CV
-- `projects.js` — cartes de la section Projets
-- `resume.js` — expérience, formation, compétences, langues
-
-Le design et les composants sont dans `src/` (`components/`, `App.css`).
+- `src/i18n/translations.js` — **tout le contenu textuel** du site (hero, projets, CV, contact) en FR **et** EN. Les titres/descriptions de projets viennent de l'ancien portfolio (PHP/Laravel).
+- `src/data/site.js` — coordonnées réelles (nom, email, GitHub, LinkedIn, lien du CV).
+- `src/data/projectLinks.js` — liens GitHub de chaque projet (retrouvés dans l'ancien controller).
+- `src/assets/projects/` — captures d'écran des projets ; `src/assets/pfp.jpg` — photo de profil.
+- `public/` — dépose ton CV ici (ex: `cv.pdf`) et renseigne `site.cv`.
 
 ## Déploiement
 
