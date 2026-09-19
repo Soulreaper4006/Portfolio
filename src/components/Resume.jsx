@@ -27,7 +27,7 @@ function Timeline({ items }) {
 }
 
 export default function Resume() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const r = t.resume
 
   return (
@@ -37,7 +37,7 @@ export default function Resume() {
           <p className="kicker">{r.kicker}</p>
           <div className="section__head-row">
             <h2>{r.title}</h2>
-            <a className="btn btn--primary btn--sm" href={site.cv} download>
+            <a className="btn btn--primary btn--sm" href={site.cv[lang]} target="_blank" rel="noreferrer">
               {r.downloadCv}
             </a>
           </div>

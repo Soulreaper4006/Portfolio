@@ -34,7 +34,7 @@ const socials = [
 ]
 
 export default function Hero() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const hero = t.hero
 
   return (
@@ -66,7 +66,7 @@ export default function Hero() {
             <a className="btn btn--primary" href="#projets">
               {hero.viewProjects}
             </a>
-            <a className="btn btn--ghost" href={site.cv} download>
+            <a className="btn btn--ghost" href={site.cv[lang]} target="_blank" rel="noreferrer">
               {hero.downloadCv}
             </a>
           </div>
