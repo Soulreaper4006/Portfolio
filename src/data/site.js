@@ -11,6 +11,9 @@ export const site = {
     linkedin: 'https://www.linkedin.com/in/ugo-dassonville/',
     discord: 'trashinfern0',
   },
-  // Placeholder — dépose ton CV dans public/ (ex: public/cv.pdf).
-  cv: '/cv.pdf',
+  // CV imprimables (export PDF via Imprimer — A4) dans public/.
+  cv: {
+    fr: '/cv-fr.html',
+    en: '/cv-en.html',
+  },
 }
