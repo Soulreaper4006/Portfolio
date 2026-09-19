@@ -4,7 +4,7 @@
 ![Vite](https://img.shields.io/badge/Vite-8.3.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![OxLint](https://img.shields.io/badge/OxLint-1.81.0-34445C?style=for-the-badge)
 
-Portfolio personnel bilingue (FR / EN), entièrement statique et gratuit à héberger. Construit avec React + Vite.
+Portfolio personnel bilingue (FR / EN).Construit avec React + Vite.
 
 ## Démo
 
