@@ -1,0 +1,331 @@
+<!doctype html>
+<!--
+  Printable CV — Ugo Dassonville (EN)
+  Open this file in the browser, then: Print > Destination "Save as PDF" > A4 > Margins "Default".
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Résumé — Ugo Dassonville</title>
+    <style>
+      :root {
+        --ink: #111827;
+        --muted: #4b5563;
+        --accent: #312e81;
+        --rule: #d1d5db;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      body {
+        margin: 0;
+        background: #e5e7eb;
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+        color: var(--ink);
+        font-size: 10.5pt;
+        line-height: 1.45;
+      }
+
+      .page {
+        width: 210mm;
+        max-width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        padding: 12mm 14mm;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .head h1 {
+        margin: 0;
+        font-size: 26pt;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        line-height: 1.05;
+      }
+      .head .role {
+        margin: 4px 0 0;
+        font-size: 12pt;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+      .head .contact {
+        margin: 9px 0 0;
+        font-size: 9.5pt;
+        color: var(--ink);
+      }
+      .head .contact a:hover {
+        text-decoration: underline;
+      }
+      .head .loc {
+        color: var(--muted);
+        font-size: 9pt;
+      }
+
+      section {
+        margin-top: 13px;
+      }
+      .s-title {
+        margin: 0 0 7px;
+        font-size: 10.5pt;
+        font-weight: 700;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-bottom: 1.5px solid var(--accent);
+        padding-bottom: 3px;
+      }
+      .item {
+        margin-bottom: 9px;
+      }
+      .item:last-child {
+        margin-bottom: 0;
+      }
+      .item-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+      .item-title {
+        font-weight: 700;
+        font-size: 10.5pt;
+      }
+      .item-date {
+        font-size: 9.5pt;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .item-sub {
+        font-weight: 600;
+        font-size: 9.5pt;
+        color: var(--muted);
+      }
+      ul.bullets {
+        margin: 3px 0 0;
+        padding-left: 16px;
+      }
+      ul.bullets li {
+        margin: 2px 0;
+      }
+
+      .skills-grid ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .skills-grid li {
+        margin: 2px 0;
+      }
+      .skills-grid .k {
+        font-weight: 700;
+      }
+
+      .cols {
+        display: flex;
+        gap: 32px;
+      }
+      .cols > div {
+        flex: 1;
+      }
+
+      @media (max-width: 720px) {
+        .cols {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 12mm 14mm;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          font-size: 10pt;
+        }
+        .page {
+          width: auto;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+        a {
+          color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- ===== Header ===== -->
+      <header class="head">
+        <h1>Ugo Dassonville</h1>
+        <p class="role">Computer Science Student — BUT Degree</p>
+        <p class="contact">
+          ugotrash31@gmail.com &nbsp;·&nbsp; +33 7 81 11 49 27 &nbsp;·&nbsp;
+          <a href="https://github.com/Soulreaper4006">github.com/Soulreaper4006</a> &nbsp;·&nbsp;
+          <a href="https://www.linkedin.com/in/ugo-dassonville/">linkedin.com/in/ugo-dassonville</a>
+        </p>
+        <p class="loc">Mazingarbe, France &nbsp;·&nbsp; Mobile for: Béthune, Douai, Lille</p>
+      </header>
+
+      <!-- ===== Profile ===== -->
+      <section>
+        <h2 class="s-title">Profile</h2>
+        <p>
+          Computer Science student in the 3<sup>rd</sup> year of a BUT degree at IUT de Lens, seeking a
+          <strong>14-week internship starting March 2027</strong>. Genuinely interested in programming
+          and building real-world applications, I approach projects with curiosity, method and teamwork.
+        </p>
+      </section>
+
+      <!-- ===== Experience ===== -->
+      <section>
+        <h2 class="s-title">Professional Experience</h2>
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">Internship — Web &amp; Mobile Application Development</span>
+            <span class="item-date">Apr 2026 – Jun 2026</span>
+          </div>
+          <p class="item-sub">Horney Dog Shop · Tourcoing</p>
+          <ul class="bullets">
+            <li>Built a web and mobile application to manage inventory of products and raw materials.</li>
+            <li>User interface developed with <strong>React</strong> + <strong>Next.js</strong>, data persisted in a <strong>PostgreSQL</strong> database.</li>
+            <li>Gathered client requirements and iterated throughout the development process.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section>
+        <h2 class="s-title">Projects</h2>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">Portfolio</span>
+            <span class="item-date">Dec 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Portfolio website built with <strong>React</strong> (Vite): projects, résumé and contact, in French and English.</li>
+            <li>Source: <a href="https://github.com/Soulreaper4006/Portfolio">github.com/Soulreaper4006/Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">Bomberman</span>
+            <span class="item-date">Jun 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Game developed in <strong>JavaFX</strong> and SceneBuilder: keyboard input handling and random enemy movement.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">Trading tournament website</span>
+            <span class="item-date">Jan 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Static website built in a 3-person team using <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">Pac-Man style 3D game — Unity</span>
+            <span class="item-date">Since Dec 2024</span>
+          </div>
+          <ul class="bullets">
+            <li>Personal project: a 3D game with a Pac-Man-like gameplay loop, built with the <strong>Unity</strong> engine.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">Online calendar</span>
+            <span class="item-date">Nov 2024</span>
+          </div>
+          <ul class="bullets">
+            <li><strong>Java</strong> program generating an HTML calendar page: public holidays, moon cycles and extra features.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Education ===== -->
+      <section>
+        <h2 class="s-title">Education</h2>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">BUT Informatique — 3<sup>rd</sup> year</span>
+            <span class="item-date">Sep 2024 – Present</span>
+          </div>
+          <p class="item-sub">IUT de Lens</p>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <span class="item-title">French General Baccalaureate</span>
+            <span class="item-date">2024</span>
+          </div>
+          <p class="item-sub">Lycée Henri Darras · Liévin</p>
+          <ul class="bullets">
+            <li>Majors in Mathematics and Computer Science (NSI).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Skills ===== -->
+      <section>
+        <h2 class="s-title">Skills</h2>
+        <div class="skills-grid">
+          <ul>
+            <li><span class="k">Languages:</span> Python, Java, C++, JavaScript</li>
+            <li><span class="k">Web development:</span> HTML, CSS, PHP, React, Next.js</li>
+            <li><span class="k">Databases:</span> SQL, PostgreSQL, MySQL, MongoDB</li>
+            <li><span class="k">Games &amp; UI:</span> Unity, Blender, JavaFX, SceneBuilder</li>
+            <li><span class="k">Tools:</span> Git (GitHub, GitLab), Docker, JetBrains (IntelliJ, PyCharm, PhpStorm), VS Code</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Languages & interests ===== -->
+      <section>
+        <div class="cols">
+          <div>
+            <h2 class="s-title">Languages</h2>
+            <ul class="bullets">
+              <li><strong>French</strong>: native</li>
+              <li><strong>English</strong>: fluent, technical English</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="s-title">Interests</h2>
+            <ul class="bullets">
+              <li>Virtual reality</li>
+              <li>Video games</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
